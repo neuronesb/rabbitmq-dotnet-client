@@ -33,6 +33,12 @@
     "System.Net.Http": "4.0.1-beta-23409",
     "System.Threading.Timer": "4.0.1-beta-23409",
     "System.Collections.Concurrent": "4.0.11-beta-23409",
-    "Microsoft.NETCore.Runtime.CoreCLR": "1.0.1-beta-23516"
+    "System.Net.Requests": "4.0.11-beta-23516",
+    "System.Threading.Thread": "4.0.0-beta-23123",
+    "System.Console": "4.0.0-beta-23409",
+    "System.Diagnostics.TraceSource": "4.0.0-beta-23225",
+    "System.Xml.XmlDocument": "4.0.0-beta-22416",
+    "System.Xml.XmlSerializer": "4.0.11-beta-23409",
+    "System.Runtime.Serialization.Primitives": "4.0.11-beta-23225"
   }
 }
