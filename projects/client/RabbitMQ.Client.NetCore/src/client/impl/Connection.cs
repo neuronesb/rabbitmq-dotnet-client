@@ -297,8 +297,7 @@ namespace RabbitMQ.Client.Framing.Impl
 
         public static IDictionary<string, object> DefaultClientProperties()
         {
-            Assembly assembly =
-                Assembly.GetAssembly(typeof(Connection));
+            Assembly assembly = typeof(Connection).GetTypeInfo().Assembly;
             string version = assembly.GetName().Version.ToString();
             //TODO: Get the rest of this data from the Assembly Attributes
             IDictionary<string, object> table = new Dictionary<string, object>();

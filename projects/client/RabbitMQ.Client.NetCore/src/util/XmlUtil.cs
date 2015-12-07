@@ -56,32 +56,32 @@ namespace RabbitMQ.Util
 
         ///<summary>Constructs an indenting XmlTextWriter that writes to a
         ///fresh MemoryStream.</summary>
-        public static XmlTextWriter CreateIndentedXmlWriter()
-        {
-            return CreateIndentedXmlWriter(new MemoryStream());
-        }
+        //public static XmlTextWriter CreateIndentedXmlWriter()
+        //{
+        //    return CreateIndentedXmlWriter(new MemoryStream());
+        //}
 
-        ///<summary>Constructs an indenting XmlTextWriter that writes to
-        ///the supplied stream.</summary>
-        public static XmlTextWriter CreateIndentedXmlWriter(Stream stream)
-        {
-            var w = new XmlTextWriter(stream, Encoding.UTF8)
-            {
-                Formatting = Formatting.Indented
-            };
-            return w;
-        }
+        /////<summary>Constructs an indenting XmlTextWriter that writes to
+        /////the supplied stream.</summary>
+        //public static XmlTextWriter CreateIndentedXmlWriter(Stream stream)
+        //{
+        //    var w = new XmlTextWriter(stream, Encoding.UTF8)
+        //    {
+        //        Formatting = Formatting.Indented
+        //    };
+        //    return w;
+        //}
 
-        ///<summary>Constructs an indenting XmlTextWriter that writes to
-        ///the supplied file name.</summary>
-        public static XmlTextWriter CreateIndentedXmlWriter(string path)
-        {
-            var w = new XmlTextWriter(path, Encoding.UTF8)
-            {
-                Formatting = Formatting.Indented
-            };
-            return w;
-        }
+        /////<summary>Constructs an indenting XmlTextWriter that writes to
+        /////the supplied file name.</summary>
+        //public static XmlTextWriter CreateIndentedXmlWriter(string path)
+        //{
+        //    var w = new XmlTextWriter(path, Encoding.UTF8)
+        //    {
+        //        Formatting = Formatting.Indented
+        //    };
+        //    return w;
+        //}
 
         ///<summary>Serializes an arbitrary serializable object to an
         ///XML document.</summary>
