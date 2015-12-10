@@ -174,7 +174,7 @@ namespace RabbitMQ.Client.Impl
                         {
                             // ignore, we are closing anyway
                         };
-                        m_socket.Close();
+                        m_socket.Dispose();
                     }
                     catch (Exception _)
                     {
@@ -256,9 +256,9 @@ namespace RabbitMQ.Client.Impl
             try
             {
                 ar = socket.BeginConnect(endpoint.HostName, endpoint.Port, null, null);
-                if (!ar.AsyncWaitHandle.WaitOne(timeout, false))
+                if (!ar.AsyncWaitHandle.WaitOne(timeout))
                 {
-                    socket.Close();
+                    socket.Dispose();
                     throw new TimeoutException("Connection to " + endpoint + " timed out");
                 }
                 socket.EndConnect(ar);
@@ -275,7 +275,7 @@ namespace RabbitMQ.Client.Impl
             {
                 if (ar != null)
                 {
-                    ar.AsyncWaitHandle.Close();
+                    ar.AsyncWaitHandle.Dispose();
                 }
             }
         }

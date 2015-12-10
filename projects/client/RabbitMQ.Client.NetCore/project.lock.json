@@ -124,8 +124,28 @@
           "ref/dotnet/System.Console.dll": {}
         }
       },
-      "System.Diagnostics.Contracts/4.0.0": {
+      "System.Core.Extension/1.0.0": {
+        "type": "project",
+        "framework": ".NETCore,Version=v5.0",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23516",
+          "System.Collections": "4.0.11-beta-23516",
+          "System.Collections.NonGeneric": "4.0.1-beta-23516",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23516",
+          "System.IO.FileSystem.DriveInfo": "4.0.0-beta-23516",
+          "System.Linq": "4.0.1-beta-23516",
+          "System.Reflection": "4.0.0-beta-23109",
+          "System.Runtime": "4.0.21-beta-23516",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23225",
+          "System.Threading": "4.0.11-beta-23516",
+          "System.Threading.Timer": "4.0.1-beta-23409"
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.1-beta-23516": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.0.0"
+        },
         "compile": {
           "ref/netcore50/System.Diagnostics.Contracts.dll": {}
         },
@@ -259,6 +279,17 @@
         },
         "runtime": {
           "lib/netcore50/System.IO.FileSystem.dll": {}
+        }
+      },
+      "System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0",
+          "System.IO.FileSystem": "4.0.0",
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.4/System.IO.FileSystem.DriveInfo.dll": {}
         }
       },
       "System.IO.FileSystem.Primitives/4.0.0": {
@@ -732,20 +763,6 @@
           "lib/netcore50/System.Threading.Timer.dll": {}
         }
       },
-      "System.Timers.Timer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCore,Version=v5.0",
-        "dependencies": {
-          "Microsoft.CSharp": "4.0.1-beta-23516",
-          "System.Collections": "4.0.11-beta-23516",
-          "System.Collections.NonGeneric": "4.0.1-beta-23516",
-          "System.Linq": "4.0.1-beta-23516",
-          "System.Reflection": "4.0.0-beta-23109",
-          "System.Runtime": "4.0.21-beta-23516",
-          "System.Threading": "4.0.11-beta-23516",
-          "System.Threading.Timer": "4.0.0-beta-22416"
-        }
-      },
       "System.Xml.ReaderWriter/4.0.10": {
         "type": "package",
         "dependencies": {
@@ -946,6 +963,35 @@
           "ref/dotnet/System.Console.dll": {}
         }
       },
+      "System.Core.Extension/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23516",
+          "System.Collections": "4.0.11-beta-23516",
+          "System.Collections.NonGeneric": "4.0.1-beta-23516",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23516",
+          "System.IO.FileSystem.DriveInfo": "4.0.0-beta-23516",
+          "System.Linq": "4.0.1-beta-23516",
+          "System.Reflection": "4.0.0-beta-23109",
+          "System.Runtime": "4.0.21-beta-23516",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23225",
+          "System.Threading": "4.0.11-beta-23516",
+          "System.Threading.Timer": "4.0.1-beta-23409"
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.1-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.1/System.Diagnostics.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Diagnostics.Contracts.dll": {}
+        }
+      },
       "System.Diagnostics.Debug/4.0.10": {
         "type": "package",
         "dependencies": {
@@ -1064,6 +1110,17 @@
         },
         "runtime": {
           "lib/DNXCore50/System.IO.FileSystem.dll": {}
+        }
+      },
+      "System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0",
+          "System.IO.FileSystem": "4.0.0",
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.4/System.IO.FileSystem.DriveInfo.dll": {}
         }
       },
       "System.IO.FileSystem.Primitives/4.0.0": {
@@ -1539,20 +1596,6 @@
         },
         "runtime": {
           "lib/DNXCore50/System.Threading.Timer.dll": {}
-        }
-      },
-      "System.Timers.Timer/1.0.0": {
-        "type": "project",
-        "framework": "DNXCore,Version=v5.0",
-        "dependencies": {
-          "Microsoft.CSharp": "4.0.1-beta-23516",
-          "System.Collections": "4.0.11-beta-23516",
-          "System.Collections.NonGeneric": "4.0.1-beta-23516",
-          "System.Linq": "4.0.1-beta-23516",
-          "System.Reflection": "4.0.0-beta-23109",
-          "System.Runtime": "4.0.21-beta-23516",
-          "System.Threading": "4.0.11-beta-23516",
-          "System.Threading.Timer": "4.0.0-beta-22416"
         }
       },
       "System.Xml.ReaderWriter/4.0.10": {
@@ -1683,6 +1726,15 @@
           "runtimes/win7/lib/dotnet/System.Console.dll": {}
         }
       },
+      "runtime.win7.System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7/lib/netcore50/_._": {}
+        }
+      },
       "runtime.win7.System.Net.Http/4.0.1-beta-23409": {
         "type": "package",
         "dependencies": {
@@ -1828,8 +1880,28 @@
           "ref/dotnet/System.Console.dll": {}
         }
       },
-      "System.Diagnostics.Contracts/4.0.0": {
+      "System.Core.Extension/1.0.0": {
+        "type": "project",
+        "framework": ".NETCore,Version=v5.0",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23516",
+          "System.Collections": "4.0.11-beta-23516",
+          "System.Collections.NonGeneric": "4.0.1-beta-23516",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23516",
+          "System.IO.FileSystem.DriveInfo": "4.0.0-beta-23516",
+          "System.Linq": "4.0.1-beta-23516",
+          "System.Reflection": "4.0.0-beta-23109",
+          "System.Runtime": "4.0.21-beta-23516",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23225",
+          "System.Threading": "4.0.11-beta-23516",
+          "System.Threading.Timer": "4.0.1-beta-23409"
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.1-beta-23516": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.0.0"
+        },
         "compile": {
           "ref/netcore50/System.Diagnostics.Contracts.dll": {}
         },
@@ -1963,6 +2035,17 @@
         },
         "runtime": {
           "lib/netcore50/System.IO.FileSystem.dll": {}
+        }
+      },
+      "System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0",
+          "System.IO.FileSystem": "4.0.0",
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.4/System.IO.FileSystem.DriveInfo.dll": {}
         }
       },
       "System.IO.FileSystem.Primitives/4.0.0": {
@@ -2471,20 +2554,6 @@
         },
         "runtime": {
           "lib/netcore50/System.Threading.Timer.dll": {}
-        }
-      },
-      "System.Timers.Timer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCore,Version=v5.0",
-        "dependencies": {
-          "Microsoft.CSharp": "4.0.1-beta-23516",
-          "System.Collections": "4.0.11-beta-23516",
-          "System.Collections.NonGeneric": "4.0.1-beta-23516",
-          "System.Linq": "4.0.1-beta-23516",
-          "System.Reflection": "4.0.0-beta-23109",
-          "System.Runtime": "4.0.21-beta-23516",
-          "System.Threading": "4.0.11-beta-23516",
-          "System.Threading.Timer": "4.0.0-beta-22416"
         }
       },
       "System.Xml.ReaderWriter/4.0.10": {
@@ -2615,6 +2684,15 @@
           "runtimes/win7/lib/dotnet/System.Console.dll": {}
         }
       },
+      "runtime.win7.System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+        "type": "package",
+        "compile": {
+          "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7/lib/netcore50/_._": {}
+        }
+      },
       "runtime.win7.System.Net.Http/4.0.1-beta-23409": {
         "type": "package",
         "dependencies": {
@@ -2760,8 +2838,28 @@
           "ref/dotnet/System.Console.dll": {}
         }
       },
-      "System.Diagnostics.Contracts/4.0.0": {
+      "System.Core.Extension/1.0.0": {
+        "type": "project",
+        "framework": ".NETCore,Version=v5.0",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23516",
+          "System.Collections": "4.0.11-beta-23516",
+          "System.Collections.NonGeneric": "4.0.1-beta-23516",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23516",
+          "System.IO.FileSystem.DriveInfo": "4.0.0-beta-23516",
+          "System.Linq": "4.0.1-beta-23516",
+          "System.Reflection": "4.0.0-beta-23109",
+          "System.Runtime": "4.0.21-beta-23516",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23225",
+          "System.Threading": "4.0.11-beta-23516",
+          "System.Threading.Timer": "4.0.1-beta-23409"
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.1-beta-23516": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.0.0"
+        },
         "compile": {
           "ref/netcore50/System.Diagnostics.Contracts.dll": {}
         },
@@ -2895,6 +2993,17 @@
         },
         "runtime": {
           "lib/netcore50/System.IO.FileSystem.dll": {}
+        }
+      },
+      "System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0",
+          "System.IO.FileSystem": "4.0.0",
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.4/System.IO.FileSystem.DriveInfo.dll": {}
         }
       },
       "System.IO.FileSystem.Primitives/4.0.0": {
@@ -3405,20 +3514,6 @@
           "lib/netcore50/System.Threading.Timer.dll": {}
         }
       },
-      "System.Timers.Timer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCore,Version=v5.0",
-        "dependencies": {
-          "Microsoft.CSharp": "4.0.1-beta-23516",
-          "System.Collections": "4.0.11-beta-23516",
-          "System.Collections.NonGeneric": "4.0.1-beta-23516",
-          "System.Linq": "4.0.1-beta-23516",
-          "System.Reflection": "4.0.0-beta-23109",
-          "System.Runtime": "4.0.21-beta-23516",
-          "System.Threading": "4.0.11-beta-23516",
-          "System.Threading.Timer": "4.0.0-beta-22416"
-        }
-      },
       "System.Xml.ReaderWriter/4.0.10": {
         "type": "package",
         "dependencies": {
@@ -3545,6 +3640,24 @@
         },
         "runtime": {
           "runtimes/win7/lib/dotnet/System.Console.dll": {}
+        }
+      },
+      "runtime.win7.System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.FileSystem": "4.0.0",
+          "System.IO.FileSystem.Primitives": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.InteropServices": "4.0.20",
+          "System.Threading.Tasks": "4.0.10"
+        },
+        "compile": {
+          "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7/lib/dotnet5.4/System.IO.FileSystem.DriveInfo.dll": {}
         }
       },
       "runtime.win7.System.Net.Http/4.0.1-beta-23409": {
@@ -3705,6 +3818,35 @@
           "ref/dotnet/System.Console.dll": {}
         }
       },
+      "System.Core.Extension/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23516",
+          "System.Collections": "4.0.11-beta-23516",
+          "System.Collections.NonGeneric": "4.0.1-beta-23516",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23516",
+          "System.IO.FileSystem.DriveInfo": "4.0.0-beta-23516",
+          "System.Linq": "4.0.1-beta-23516",
+          "System.Reflection": "4.0.0-beta-23109",
+          "System.Runtime": "4.0.21-beta-23516",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23225",
+          "System.Threading": "4.0.11-beta-23516",
+          "System.Threading.Timer": "4.0.1-beta-23409"
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.1-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.1/System.Diagnostics.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Diagnostics.Contracts.dll": {}
+        }
+      },
       "System.Diagnostics.Debug/4.0.10": {
         "type": "package",
         "dependencies": {
@@ -3843,6 +3985,17 @@
         },
         "runtime": {
           "lib/DNXCore50/System.IO.FileSystem.dll": {}
+        }
+      },
+      "System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0",
+          "System.IO.FileSystem": "4.0.0",
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.4/System.IO.FileSystem.DriveInfo.dll": {}
         }
       },
       "System.IO.FileSystem.Primitives/4.0.0": {
@@ -4339,20 +4492,6 @@
         },
         "runtime": {
           "lib/DNXCore50/System.Threading.Timer.dll": {}
-        }
-      },
-      "System.Timers.Timer/1.0.0": {
-        "type": "project",
-        "framework": "DNXCore,Version=v5.0",
-        "dependencies": {
-          "Microsoft.CSharp": "4.0.1-beta-23516",
-          "System.Collections": "4.0.11-beta-23516",
-          "System.Collections.NonGeneric": "4.0.1-beta-23516",
-          "System.Linq": "4.0.1-beta-23516",
-          "System.Reflection": "4.0.0-beta-23109",
-          "System.Runtime": "4.0.21-beta-23516",
-          "System.Threading": "4.0.11-beta-23516",
-          "System.Threading.Timer": "4.0.0-beta-22416"
         }
       },
       "System.Xml.ReaderWriter/4.0.10": {
@@ -4483,6 +4622,24 @@
           "runtimes/win7/lib/dotnet/System.Console.dll": {}
         }
       },
+      "runtime.win7.System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.FileSystem": "4.0.0",
+          "System.IO.FileSystem.Primitives": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.InteropServices": "4.0.20",
+          "System.Threading.Tasks": "4.0.10"
+        },
+        "compile": {
+          "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7/lib/dotnet5.4/System.IO.FileSystem.DriveInfo.dll": {}
+        }
+      },
       "runtime.win7.System.Net.Http/4.0.1-beta-23409": {
         "type": "package",
         "dependencies": {
@@ -4641,6 +4798,35 @@
           "ref/dotnet/System.Console.dll": {}
         }
       },
+      "System.Core.Extension/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1-beta-23516",
+          "System.Collections": "4.0.11-beta-23516",
+          "System.Collections.NonGeneric": "4.0.1-beta-23516",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23516",
+          "System.IO.FileSystem.DriveInfo": "4.0.0-beta-23516",
+          "System.Linq": "4.0.1-beta-23516",
+          "System.Reflection": "4.0.0-beta-23109",
+          "System.Runtime": "4.0.21-beta-23516",
+          "System.Runtime.Serialization.Primitives": "4.0.11-beta-23225",
+          "System.Threading": "4.0.11-beta-23516",
+          "System.Threading.Timer": "4.0.1-beta-23409"
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.1-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.1/System.Diagnostics.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Diagnostics.Contracts.dll": {}
+        }
+      },
       "System.Diagnostics.Debug/4.0.10": {
         "type": "package",
         "dependencies": {
@@ -4779,6 +4965,17 @@
         },
         "runtime": {
           "lib/DNXCore50/System.IO.FileSystem.dll": {}
+        }
+      },
+      "System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0",
+          "System.IO.FileSystem": "4.0.0",
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet5.4/System.IO.FileSystem.DriveInfo.dll": {}
         }
       },
       "System.IO.FileSystem.Primitives/4.0.0": {
@@ -5277,20 +5474,6 @@
           "lib/DNXCore50/System.Threading.Timer.dll": {}
         }
       },
-      "System.Timers.Timer/1.0.0": {
-        "type": "project",
-        "framework": "DNXCore,Version=v5.0",
-        "dependencies": {
-          "Microsoft.CSharp": "4.0.1-beta-23516",
-          "System.Collections": "4.0.11-beta-23516",
-          "System.Collections.NonGeneric": "4.0.1-beta-23516",
-          "System.Linq": "4.0.1-beta-23516",
-          "System.Reflection": "4.0.0-beta-23109",
-          "System.Runtime": "4.0.21-beta-23516",
-          "System.Threading": "4.0.11-beta-23516",
-          "System.Threading.Timer": "4.0.0-beta-22416"
-        }
-      },
       "System.Xml.ReaderWriter/4.0.10": {
         "type": "package",
         "dependencies": {
@@ -5360,9 +5543,9 @@
     }
   },
   "libraries": {
-    "System.Timers.Timer/1.0.0": {
+    "System.Core.Extension/1.0.0": {
       "type": "project",
-      "path": "../System.Timers.Timer/project.json"
+      "path": "../System.Core.Extension/project.json"
     },
     "Microsoft.CSharp/4.0.1-beta-23516": {
       "type": "package",
@@ -5466,6 +5649,23 @@
         "runtimes/win7/lib/dotnet/System.Console.xml",
         "runtimes/win7/lib/dotnet/zh-hans/System.Console.xml",
         "runtimes/win7/lib/dotnet/zh-hant/System.Console.xml"
+      ]
+    },
+    "runtime.win7.System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "ha9ZV9a6xmNg/EC4HnZyQ+cYXtoxOvhmmjh0cvoBBKePxqwuumUnVH3SZuF/P3ogdP7t3BXE73vLo7whml7mMg==",
+      "files": [
+        "ref/dotnet/_._",
+        "runtime.win7.System.IO.FileSystem.DriveInfo.4.0.0-beta-23516.nupkg",
+        "runtime.win7.System.IO.FileSystem.DriveInfo.4.0.0-beta-23516.nupkg.sha512",
+        "runtime.win7.System.IO.FileSystem.DriveInfo.nuspec",
+        "runtimes/win7/lib/dotnet5.4/System.IO.FileSystem.DriveInfo.dll",
+        "runtimes/win7/lib/net/_._",
+        "runtimes/win7/lib/netcore50/_._",
+        "runtimes/win7/lib/win8/_._",
+        "runtimes/win7/lib/wp8/_._",
+        "runtimes/win7/lib/wpa81/_._"
       ]
     },
     "runtime.win7.System.Net.Http/4.0.1-beta-23409": {
@@ -5754,9 +5954,10 @@
         "System.Console.nuspec"
       ]
     },
-    "System.Diagnostics.Contracts/4.0.0": {
+    "System.Diagnostics.Contracts/4.0.1-beta-23516": {
       "type": "package",
-      "sha512": "lMc7HNmyIsu0pKTdA4wf+FMq5jvouUd+oUpV4BdtyqoV0Pkbg9u/7lTKFGqpjZRQosWHq1+B32Lch2wf4AmloA==",
+      "serviceable": true,
+      "sha512": "iG9kHAu2B251lTHH2B4qXjctRkiEuCov8fDiSqZAuqFTMegcZ27wLKWAQxXANs1A5PmqSPzrfro+mBUxqlaCVA==",
       "files": [
         "lib/DNXCore50/System.Diagnostics.Contracts.dll",
         "lib/net45/_._",
@@ -5764,26 +5965,35 @@
         "lib/win8/_._",
         "lib/wp80/_._",
         "lib/wpa81/_._",
-        "ref/dotnet/de/System.Diagnostics.Contracts.xml",
-        "ref/dotnet/es/System.Diagnostics.Contracts.xml",
-        "ref/dotnet/fr/System.Diagnostics.Contracts.xml",
-        "ref/dotnet/it/System.Diagnostics.Contracts.xml",
-        "ref/dotnet/ja/System.Diagnostics.Contracts.xml",
-        "ref/dotnet/ko/System.Diagnostics.Contracts.xml",
-        "ref/dotnet/ru/System.Diagnostics.Contracts.xml",
-        "ref/dotnet/System.Diagnostics.Contracts.dll",
-        "ref/dotnet/System.Diagnostics.Contracts.xml",
-        "ref/dotnet/zh-hans/System.Diagnostics.Contracts.xml",
-        "ref/dotnet/zh-hant/System.Diagnostics.Contracts.xml",
+        "ref/dotnet5.1/de/System.Diagnostics.Contracts.xml",
+        "ref/dotnet5.1/es/System.Diagnostics.Contracts.xml",
+        "ref/dotnet5.1/fr/System.Diagnostics.Contracts.xml",
+        "ref/dotnet5.1/it/System.Diagnostics.Contracts.xml",
+        "ref/dotnet5.1/ja/System.Diagnostics.Contracts.xml",
+        "ref/dotnet5.1/ko/System.Diagnostics.Contracts.xml",
+        "ref/dotnet5.1/ru/System.Diagnostics.Contracts.xml",
+        "ref/dotnet5.1/System.Diagnostics.Contracts.dll",
+        "ref/dotnet5.1/System.Diagnostics.Contracts.xml",
+        "ref/dotnet5.1/zh-hans/System.Diagnostics.Contracts.xml",
+        "ref/dotnet5.1/zh-hant/System.Diagnostics.Contracts.xml",
         "ref/net45/_._",
+        "ref/netcore50/de/System.Diagnostics.Contracts.xml",
+        "ref/netcore50/es/System.Diagnostics.Contracts.xml",
+        "ref/netcore50/fr/System.Diagnostics.Contracts.xml",
+        "ref/netcore50/it/System.Diagnostics.Contracts.xml",
+        "ref/netcore50/ja/System.Diagnostics.Contracts.xml",
+        "ref/netcore50/ko/System.Diagnostics.Contracts.xml",
+        "ref/netcore50/ru/System.Diagnostics.Contracts.xml",
         "ref/netcore50/System.Diagnostics.Contracts.dll",
         "ref/netcore50/System.Diagnostics.Contracts.xml",
+        "ref/netcore50/zh-hans/System.Diagnostics.Contracts.xml",
+        "ref/netcore50/zh-hant/System.Diagnostics.Contracts.xml",
         "ref/win8/_._",
         "ref/wp80/_._",
         "ref/wpa81/_._",
         "runtimes/win8-aot/lib/netcore50/System.Diagnostics.Contracts.dll",
-        "System.Diagnostics.Contracts.4.0.0.nupkg",
-        "System.Diagnostics.Contracts.4.0.0.nupkg.sha512",
+        "System.Diagnostics.Contracts.4.0.1-beta-23516.nupkg",
+        "System.Diagnostics.Contracts.4.0.1-beta-23516.nupkg.sha512",
         "System.Diagnostics.Contracts.nuspec"
       ]
     },
@@ -6095,6 +6305,38 @@
         "System.IO.FileSystem.4.0.0.nupkg",
         "System.IO.FileSystem.4.0.0.nupkg.sha512",
         "System.IO.FileSystem.nuspec"
+      ]
+    },
+    "System.IO.FileSystem.DriveInfo/4.0.0-beta-23516": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "k/GR3QoVvBRD19aidnH+xdXwnodChNHnB8wIFxgyYUlWddXAiOAX+sSAwon2aZhnGkN4TVi8jWnevn7aSwVTXg==",
+      "files": [
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.IO.FileSystem.DriveInfo.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet5.4/de/System.IO.FileSystem.DriveInfo.xml",
+        "ref/dotnet5.4/es/System.IO.FileSystem.DriveInfo.xml",
+        "ref/dotnet5.4/fr/System.IO.FileSystem.DriveInfo.xml",
+        "ref/dotnet5.4/it/System.IO.FileSystem.DriveInfo.xml",
+        "ref/dotnet5.4/ja/System.IO.FileSystem.DriveInfo.xml",
+        "ref/dotnet5.4/ko/System.IO.FileSystem.DriveInfo.xml",
+        "ref/dotnet5.4/ru/System.IO.FileSystem.DriveInfo.xml",
+        "ref/dotnet5.4/System.IO.FileSystem.DriveInfo.dll",
+        "ref/dotnet5.4/System.IO.FileSystem.DriveInfo.xml",
+        "ref/dotnet5.4/zh-hans/System.IO.FileSystem.DriveInfo.xml",
+        "ref/dotnet5.4/zh-hant/System.IO.FileSystem.DriveInfo.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.IO.FileSystem.DriveInfo.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "runtime.json",
+        "System.IO.FileSystem.DriveInfo.4.0.0-beta-23516.nupkg",
+        "System.IO.FileSystem.DriveInfo.4.0.0-beta-23516.nupkg.sha512",
+        "System.IO.FileSystem.DriveInfo.nuspec"
       ]
     },
     "System.IO.FileSystem.Primitives/4.0.0": {
@@ -7546,7 +7788,7 @@
       "System.Xml.XmlDocument >= 4.0.0-beta-22416",
       "System.Xml.XmlSerializer >= 4.0.11-beta-23409",
       "System.Runtime.Serialization.Primitives >= 4.0.11-beta-23225",
-      "System.Timers.Timer >= 1.0.0-*"
+      "System.Core.Extension >= 1.0.0-*"
     ],
     ".NETCore,Version=v5.0": [],
     "DNXCore,Version=v5.0": []

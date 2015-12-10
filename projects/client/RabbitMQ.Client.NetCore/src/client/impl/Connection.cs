@@ -122,7 +122,7 @@ namespace RabbitMQ.Client.Framing.Impl
             StartMainLoop(factory.UseBackgroundThreadsForIO);
             Open(insist);
 
-            AppDomain.CurrentDomain.DomainUnload += HandleDomainUnload;
+            //AppDomain.CurrentDomain.DomainUnload += HandleDomainUnload;
         }
 
         public event EventHandler<CallbackExceptionEventArgs> CallbackException
@@ -392,7 +392,7 @@ namespace RabbitMQ.Client.Framing.Impl
                     TerminateMainloop();
                 }
             }
-            if (!m_appContinuation.WaitOne(BlockingCell.validatedTimeout(timeout), true))
+            if (!m_appContinuation.WaitOne(BlockingCell.validatedTimeout(timeout)))
             {
                 m_frameHandler.Close();
             }
@@ -795,7 +795,7 @@ namespace RabbitMQ.Client.Framing.Impl
                     }
                 }
             }
-            AppDomain.CurrentDomain.DomainUnload -= HandleDomainUnload;
+            //AppDomain.CurrentDomain.DomainUnload -= HandleDomainUnload;
         }
 
         public void Open(bool insist)
@@ -898,11 +898,8 @@ namespace RabbitMQ.Client.Framing.Impl
         {
             if (Heartbeat != 0)
             {
-                _heartbeatWriteTimer = new Timer(HeartbeatWriteTimerCallback);
-                _heartbeatWriteTimer.Change(TimeSpan.FromMilliseconds(200), m_heartbeatTimeSpan);
-
-                _heartbeatReadTimer = new Timer(HeartbeatReadTimerCallback);
-                _heartbeatReadTimer.Change(TimeSpan.FromMilliseconds(200), m_heartbeatTimeSpan);
+                _heartbeatWriteTimer = new Timer(HeartbeatWriteTimerCallback, null, TimeSpan.FromMilliseconds(200), m_heartbeatTimeSpan);
+                _heartbeatReadTimer = new Timer(HeartbeatReadTimerCallback, null, TimeSpan.FromMilliseconds(200), m_heartbeatTimeSpan);
             }
         }
 
@@ -921,7 +918,7 @@ namespace RabbitMQ.Client.Framing.Impl
             {
                 if (!m_closed)
                 {
-                    if (!m_heartbeatRead.WaitOne(0, false))
+                    if (!m_heartbeatRead.WaitOne(0))
                     {
                         m_missedHeartbeats++;
                     }

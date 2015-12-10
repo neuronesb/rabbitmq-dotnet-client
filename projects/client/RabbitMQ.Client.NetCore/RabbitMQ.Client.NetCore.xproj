@@ -14,6 +14,9 @@
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <ProduceOutputsOnBuild>True</ProduceOutputsOnBuild>
+  </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\..\docs\specs\amqp0-9-1.stripped.xml">
       <Link>specs\amqp0-9-1.stripped.xml</Link>
