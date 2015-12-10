@@ -357,7 +357,7 @@
           "lib/netcore50/System.Runtime.InteropServices.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.0.11-beta-23225": {
+      "System.Runtime.Serialization.Primitives/4.0.11-beta-23409": {
         "type": "package",
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
@@ -451,8 +451,11 @@
           "lib/netcore50/System.Threading.Tasks.dll": {}
         }
       },
-      "System.Threading.Timer/4.0.1-beta-23409": {
+      "System.Threading.Timer/4.0.1-beta-23516": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.0.0"
+        },
         "compile": {
           "ref/netcore50/System.Threading.Timer.dll": {}
         },
@@ -786,7 +789,7 @@
           "lib/DNXCore50/System.Runtime.InteropServices.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.0.11-beta-23225": {
+      "System.Runtime.Serialization.Primitives/4.0.11-beta-23409": {
         "type": "package",
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
@@ -859,13 +862,13 @@
           "lib/DNXCore50/System.Threading.Tasks.dll": {}
         }
       },
-      "System.Threading.Timer/4.0.1-beta-23409": {
+      "System.Threading.Timer/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Threading.Timer.dll": {}
+          "ref/dotnet5.3/System.Threading.Timer.dll": {}
         },
         "runtime": {
           "lib/DNXCore50/System.Threading.Timer.dll": {}
@@ -1254,7 +1257,7 @@
           "lib/netcore50/System.Runtime.InteropServices.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.0.11-beta-23225": {
+      "System.Runtime.Serialization.Primitives/4.0.11-beta-23409": {
         "type": "package",
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
@@ -1348,8 +1351,11 @@
           "lib/netcore50/System.Threading.Tasks.dll": {}
         }
       },
-      "System.Threading.Timer/4.0.1-beta-23409": {
+      "System.Threading.Timer/4.0.1-beta-23516": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.0.0"
+        },
         "compile": {
           "ref/netcore50/System.Threading.Timer.dll": {}
         },
@@ -1740,7 +1746,7 @@
           "lib/netcore50/System.Runtime.InteropServices.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.0.11-beta-23225": {
+      "System.Runtime.Serialization.Primitives/4.0.11-beta-23409": {
         "type": "package",
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
@@ -1834,8 +1840,11 @@
           "lib/netcore50/System.Threading.Tasks.dll": {}
         }
       },
-      "System.Threading.Timer/4.0.1-beta-23409": {
+      "System.Threading.Timer/4.0.1-beta-23516": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.0.0"
+        },
         "compile": {
           "ref/netcore50/System.Threading.Timer.dll": {}
         },
@@ -2205,7 +2214,7 @@
           "lib/DNXCore50/System.Runtime.InteropServices.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.0.11-beta-23225": {
+      "System.Runtime.Serialization.Primitives/4.0.11-beta-23409": {
         "type": "package",
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
@@ -2278,13 +2287,13 @@
           "lib/DNXCore50/System.Threading.Tasks.dll": {}
         }
       },
-      "System.Threading.Timer/4.0.1-beta-23409": {
+      "System.Threading.Timer/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Threading.Timer.dll": {}
+          "ref/dotnet5.3/System.Threading.Timer.dll": {}
         },
         "runtime": {
           "lib/DNXCore50/System.Threading.Timer.dll": {}
@@ -2652,7 +2661,7 @@
           "lib/DNXCore50/System.Runtime.InteropServices.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.0.11-beta-23225": {
+      "System.Runtime.Serialization.Primitives/4.0.11-beta-23409": {
         "type": "package",
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
@@ -2725,13 +2734,13 @@
           "lib/DNXCore50/System.Threading.Tasks.dll": {}
         }
       },
-      "System.Threading.Timer/4.0.1-beta-23409": {
+      "System.Threading.Timer/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
           "System.Runtime": "4.0.0"
         },
         "compile": {
-          "ref/dotnet/System.Threading.Timer.dll": {}
+          "ref/dotnet5.3/System.Threading.Timer.dll": {}
         },
         "runtime": {
           "lib/DNXCore50/System.Threading.Timer.dll": {}
@@ -3717,12 +3726,22 @@
         "System.Runtime.InteropServices.nuspec"
       ]
     },
-    "System.Runtime.Serialization.Primitives/4.0.11-beta-23225": {
+    "System.Runtime.Serialization.Primitives/4.0.11-beta-23409": {
       "type": "package",
       "serviceable": true,
-      "sha512": "uOoT8lH3IoZI8AsyXkn/itZI4MBzykjIWqTVWSWsP0/l0EpBSRejd5Vja+wJRAg4vw0qA26ULlA9smPDMeWjCw==",
+      "sha512": "AQywM01eG8EgYde/RRrJDVdHmOOI3KkgK9GEjLQqvTLsrWsamNHN/j7Pxwa3XX7klSSrfDpvTNfUl40855idVg==",
       "files": [
+        "lib/dotnet/de/System.Runtime.Serialization.Primitives.xml",
+        "lib/dotnet/es/System.Runtime.Serialization.Primitives.xml",
+        "lib/dotnet/fr/System.Runtime.Serialization.Primitives.xml",
+        "lib/dotnet/it/System.Runtime.Serialization.Primitives.xml",
+        "lib/dotnet/ja/System.Runtime.Serialization.Primitives.xml",
+        "lib/dotnet/ko/System.Runtime.Serialization.Primitives.xml",
+        "lib/dotnet/ru/System.Runtime.Serialization.Primitives.xml",
         "lib/dotnet/System.Runtime.Serialization.Primitives.dll",
+        "lib/dotnet/System.Runtime.Serialization.Primitives.xml",
+        "lib/dotnet/zh-hans/System.Runtime.Serialization.Primitives.xml",
+        "lib/dotnet/zh-hant/System.Runtime.Serialization.Primitives.xml",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net46/_._",
@@ -3734,8 +3753,8 @@
         "ref/net46/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
-        "System.Runtime.Serialization.Primitives.4.0.11-beta-23225.nupkg",
-        "System.Runtime.Serialization.Primitives.4.0.11-beta-23225.nupkg.sha512",
+        "System.Runtime.Serialization.Primitives.4.0.11-beta-23409.nupkg",
+        "System.Runtime.Serialization.Primitives.4.0.11-beta-23409.nupkg.sha512",
         "System.Runtime.Serialization.Primitives.nuspec"
       ]
     },
@@ -3962,41 +3981,61 @@
         "System.Threading.Tasks.nuspec"
       ]
     },
-    "System.Threading.Timer/4.0.1-beta-23409": {
+    "System.Threading.Timer/4.0.1-beta-23516": {
       "type": "package",
       "serviceable": true,
-      "sha512": "VqyaIkdvsQq+WBV+5M5fMhRmkZlWlcoLJt8IOqqZX64uQqLLD7n7V9Q5YkopR72ve57lJ5ZODUDJUH8zNh9sqQ==",
+      "sha512": "oXQbMiKRlhiG7TkCtUxBkC6mZWVSgpRKMMHkpaUkrvHKMmyic5BuYTSgodim9XMxWKD9EzDjKk4gIFCvADlAqQ==",
       "files": [
         "lib/DNXCore50/System.Threading.Timer.dll",
         "lib/net451/_._",
         "lib/netcore50/System.Threading.Timer.dll",
         "lib/win81/_._",
         "lib/wpa81/_._",
-        "ref/dotnet/System.Threading.Timer.dll",
+        "ref/dotnet5.3/de/System.Threading.Timer.xml",
+        "ref/dotnet5.3/es/System.Threading.Timer.xml",
+        "ref/dotnet5.3/fr/System.Threading.Timer.xml",
+        "ref/dotnet5.3/it/System.Threading.Timer.xml",
+        "ref/dotnet5.3/ja/System.Threading.Timer.xml",
+        "ref/dotnet5.3/ko/System.Threading.Timer.xml",
+        "ref/dotnet5.3/ru/System.Threading.Timer.xml",
+        "ref/dotnet5.3/System.Threading.Timer.dll",
+        "ref/dotnet5.3/System.Threading.Timer.xml",
+        "ref/dotnet5.3/zh-hans/System.Threading.Timer.xml",
+        "ref/dotnet5.3/zh-hant/System.Threading.Timer.xml",
         "ref/net451/_._",
+        "ref/netcore50/de/System.Threading.Timer.xml",
+        "ref/netcore50/es/System.Threading.Timer.xml",
+        "ref/netcore50/fr/System.Threading.Timer.xml",
+        "ref/netcore50/it/System.Threading.Timer.xml",
+        "ref/netcore50/ja/System.Threading.Timer.xml",
+        "ref/netcore50/ko/System.Threading.Timer.xml",
+        "ref/netcore50/ru/System.Threading.Timer.xml",
         "ref/netcore50/System.Threading.Timer.dll",
+        "ref/netcore50/System.Threading.Timer.xml",
+        "ref/netcore50/zh-hans/System.Threading.Timer.xml",
+        "ref/netcore50/zh-hant/System.Threading.Timer.xml",
         "ref/win81/_._",
         "ref/wpa81/_._",
         "runtimes/win8-aot/lib/netcore50/System.Threading.Timer.dll",
-        "System.Threading.Timer.4.0.1-beta-23409.nupkg",
-        "System.Threading.Timer.4.0.1-beta-23409.nupkg.sha512",
+        "System.Threading.Timer.4.0.1-beta-23516.nupkg",
+        "System.Threading.Timer.4.0.1-beta-23516.nupkg.sha512",
         "System.Threading.Timer.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
-      "Microsoft.CSharp >= 4.0.1-beta-23516",
-      "System.Collections >= 4.0.11-beta-23516",
-      "System.Linq >= 4.0.1-beta-23516",
-      "System.Runtime >= 4.0.21-beta-23516",
-      "System.Threading >= 4.0.11-beta-23516",
-      "System.Collections.NonGeneric >= 4.0.1-beta-23516",
-      "System.Threading.Timer >= 4.0.1-beta-23409",
-      "System.Reflection >= 4.0.0-beta-23109",
-      "System.Diagnostics.Contracts >= 4.0.1-beta-23516",
-      "System.Runtime.Serialization.Primitives >= 4.0.11-beta-23225",
-      "System.IO.FileSystem.DriveInfo >= 4.0.0-beta-23516"
+      "Microsoft.CSharp >= 4.0.1-beta-*",
+      "System.Collections >= 4.0.11-beta-*",
+      "System.Linq >= 4.0.1-beta-*",
+      "System.Runtime >= 4.0.21-beta-*",
+      "System.Threading >= 4.0.11-beta-*",
+      "System.Collections.NonGeneric >= 4.0.1-beta-*",
+      "System.Threading.Timer >= 4.0.1-beta-*",
+      "System.Reflection >= 4.0.0-beta-*",
+      "System.Diagnostics.Contracts >= 4.0.1-beta-*",
+      "System.Runtime.Serialization.Primitives >= 4.0.11-beta-*",
+      "System.IO.FileSystem.DriveInfo >= 4.0.0-beta-*"
     ],
     ".NETCore,Version=v5.0": [],
     "DNXCore,Version=v5.0": []

@@ -11,16 +11,16 @@
     "dnxcore50": { }
   },
   "dependencies": {
-    "Microsoft.CSharp": "4.0.1-beta-23516",
-    "System.Collections": "4.0.11-beta-23516",
-    "System.Linq": "4.0.1-beta-23516",
-    "System.Runtime": "4.0.21-beta-23516",
-    "System.Threading": "4.0.11-beta-23516",
-    "System.Collections.NonGeneric": "4.0.1-beta-23516",
-    "System.Threading.Timer": "4.0.1-beta-23409",
-    "System.Reflection": "4.0.0-beta-23109",
-    "System.Diagnostics.Contracts": "4.0.1-beta-23516",
-    "System.Runtime.Serialization.Primitives": "4.0.11-beta-23225",
-    "System.IO.FileSystem.DriveInfo": "4.0.0-beta-23516"
+    "Microsoft.CSharp": "4.0.1-beta-*",
+    "System.Collections": "4.0.11-beta-*",
+    "System.Linq": "4.0.1-beta-*",
+    "System.Runtime": "4.0.21-beta-*",
+    "System.Threading": "4.0.11-beta-*",
+    "System.Collections.NonGeneric": "4.0.1-beta-*",
+    "System.Threading.Timer": "4.0.1-beta-*",
+    "System.Reflection": "4.0.0-beta-*",
+    "System.Diagnostics.Contracts": "4.0.1-beta-*",
+    "System.Runtime.Serialization.Primitives": "4.0.11-beta-*",
+    "System.IO.FileSystem.DriveInfo": "4.0.0-beta-*"
   }
 }
